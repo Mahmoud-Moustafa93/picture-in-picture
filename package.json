@@ -15,7 +15,7 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "build:js": "webpack --config webpack.config.prod.js",
     "babel": "babel dist/script-webpack.js --out-file dist/script-babel.js --presets=@babel/preset-env",
-    "babel-minify": "minify dist/script-babel.js --out-file dist/script-min.js --mangle.keepClassName",
+    "babel-minify": "minify dist/script-babel.js --out-file dist/script.min.js --mangle.keepClassName",
     "build-final": "npm-run-all babel babel-minify"
   },
   "author": "Mahmoud Mostafa",
